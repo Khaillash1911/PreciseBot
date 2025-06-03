@@ -38,7 +38,7 @@ from flask_cors import CORS
 
 # -------- API Key --------
 # For local development, keeping it here. For production, use environment variables.
-os.environ["GROQ_API_KEY"] = "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"
+os.environ["GROQ_API_KEY"] = "" #<----- Include your API Key
 client = Groq(api_key=os.environ["GROQ_API_KEY"])
 
 # -------- PDF Text Extraction --------

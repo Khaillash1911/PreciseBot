@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreciseBot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236366F1'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z'/%3E%3C/svg%3E" type="image/svg+xml">
+</head>
+<body>
+    <div class="container">
+        <header class="navbar">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#6366F1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                </svg>
+                PreciseBot
+            </div>
+            <nav class="nav-links">
+                <a href="#">Home</a>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <aside class="sidebar">
+                <h2>Upload Files</h2>
+                <div class="upload-area">
+                    <div class="upload-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-upload-cloud">
+                            <polyline points="16 16 12 12 8 16"></polyline>
+                            <line x1="12" y1="12" x2="12" y2="21"></line>
+                            <path d="M20.39 18.39A5 5 0 0 0 18 10h-1.26A8 8 0 1 0 3 16.3"></path>
+                            <polyline points="16 16 12 12 8 16"></polyline>
+                        </svg>
+                    </div>
+                    <p>Drag & drop files here (Below 10MB)</p>
+                    <p>or</p>
+                    <button class="browse-files-btn">Browse Files</button>
+                    <input type="file" id="file-input" multiple hidden>
+                </div>
+                <h3>Uploaded Files</h3>
+                <ul class="uploaded-files-list">
+                    </ul>
+            </aside>
+
+            <section class="chat-area">
+                <div class="chat-messages">
+                    <p class="bot-message">Hello! I'm PreciseBot. Upload files or ask me anything, and I'll do my best to help you.</p>
+                    </div>
+                <div class="message-input-container">
+                    <input type="text" class="message-input" placeholder="Ask anything...">
+                    <button class="send-message-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+    <footer class="footer bg-indigo-500 text-white flex flex-col items-center text-center px-8 py-3 w-full fixed bottom-0 left-0 z-50 text-base">
+        <div class="footer-right flex items-center gap-4 font-medium alighn-items-right">
+            Created by Khaillash
+            <a href="https://github.com/Khaillash1911" target="_blank" class="footer-icon" aria-label="GitHub">
+                <i class="fab fa-github fa-lg text-white" style="color:white;"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/khaillash-sashitharan-57580625a/" target="_blank" class="footer-icon" aria-label="LinkedIn">
+                <i class="fab fa-linkedin fa-lg text-white" style="color:white;"></i>
+            </a>
+            <a href="https://khaillashportfolio.netlify.app/"
+               target="_blank"
+               class="ml-3 px-3 py-1 rounded bg-white text-indigo-500 font-semibold text-sm border-none shadow-none"
+               style="text-decoration:none; transition:none; box-shadow:none;">
+                More Projects
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
